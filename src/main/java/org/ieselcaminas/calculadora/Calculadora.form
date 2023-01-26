@@ -28,45 +28,45 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="inputCalc" min="-2" pref="367" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="boton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="button1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="boton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="button2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="boton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="button3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botonmas" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonAdd" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="boton4" min="-2" max="-2" attributes="0"/>
+                      <Component id="button4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="boton5" min="-2" max="-2" attributes="0"/>
+                      <Component id="button5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="boton6" min="-2" max="-2" attributes="0"/>
+                      <Component id="button6" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botonmenos" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonSub" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="boton7" min="-2" max="-2" attributes="0"/>
+                      <Component id="button7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="boton8" min="-2" max="-2" attributes="0"/>
+                      <Component id="button8" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="boton9" min="-2" max="-2" attributes="0"/>
+                      <Component id="button9" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botonmultiplication" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonMult" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="botoncoma" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonComma" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="boton0" min="-2" max="-2" attributes="0"/>
+                      <Component id="button0" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botonc" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonC" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botondivision" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonDiv" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="botonigual" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonEquals" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="botonflecha" min="-2" max="-2" attributes="0"/>
+                      <Component id="buttonDelete" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -80,36 +80,36 @@
               <Component id="inputCalc" min="-2" pref="35" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="boton1" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="boton2" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="boton3" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="botonmas" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button1" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button2" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button3" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="buttonAdd" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="boton4" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="boton5" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="boton6" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="botonmenos" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button4" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button5" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button6" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="buttonSub" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="boton7" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="boton8" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="boton9" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="botonmultiplication" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button7" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button8" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button9" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="buttonMult" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="botoncoma" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="boton0" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="botonc" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="botondivision" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="buttonComma" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="button0" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="buttonC" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="buttonDiv" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="botonigual" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="botonflecha" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="buttonEquals" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="buttonDelete" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="53" max="32767" attributes="0"/>
           </Group>
@@ -122,7 +122,7 @@
         <Property name="editable" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="boton1">
+    <Component class="javax.swing.JButton" name="button1">
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -130,10 +130,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton2">
+    <Component class="javax.swing.JButton" name="button2">
       <Properties>
         <Property name="text" type="java.lang.String" value="2"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -141,10 +141,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button2ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton3">
+    <Component class="javax.swing.JButton" name="button3">
       <Properties>
         <Property name="text" type="java.lang.String" value="3"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -152,10 +152,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button3ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonmas">
+    <Component class="javax.swing.JButton" name="buttonAdd">
       <Properties>
         <Property name="text" type="java.lang.String" value="+"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -163,10 +163,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonmasActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonAddActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton4">
+    <Component class="javax.swing.JButton" name="button4">
       <Properties>
         <Property name="text" type="java.lang.String" value="4"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -174,10 +174,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton4ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button4ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton5">
+    <Component class="javax.swing.JButton" name="button5">
       <Properties>
         <Property name="text" type="java.lang.String" value="5"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -185,10 +185,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton5ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button5ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton6">
+    <Component class="javax.swing.JButton" name="button6">
       <Properties>
         <Property name="text" type="java.lang.String" value="6"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -196,10 +196,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button6ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonmenos">
+    <Component class="javax.swing.JButton" name="buttonSub">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -207,10 +207,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonmenosActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonSubActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton7">
+    <Component class="javax.swing.JButton" name="button7">
       <Properties>
         <Property name="text" type="java.lang.String" value="7"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -218,10 +218,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button7ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton8">
+    <Component class="javax.swing.JButton" name="button8">
       <Properties>
         <Property name="text" type="java.lang.String" value="8"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -229,10 +229,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton8ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button8ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton9">
+    <Component class="javax.swing.JButton" name="button9">
       <Properties>
         <Property name="text" type="java.lang.String" value="9"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -240,10 +240,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="boton9ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonmultiplication">
+    <Component class="javax.swing.JButton" name="buttonMult">
       <Properties>
         <Property name="text" type="java.lang.String" value="*"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -251,10 +251,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonmultiplicationActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonMultActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botoncoma">
+    <Component class="javax.swing.JButton" name="buttonComma">
       <Properties>
         <Property name="text" type="java.lang.String" value=","/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -262,18 +262,21 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoncomaActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCommaActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="boton0">
+    <Component class="javax.swing.JButton" name="button0">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[100, 25]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button0ActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonc">
+    <Component class="javax.swing.JButton" name="buttonC">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -281,10 +284,10 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoncActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonCActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botondivision">
+    <Component class="javax.swing.JButton" name="buttonDiv">
       <Properties>
         <Property name="text" type="java.lang.String" value="/"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -292,18 +295,21 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botondivisionActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonDivActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonigual">
+    <Component class="javax.swing.JButton" name="buttonEquals">
       <Properties>
         <Property name="text" type="java.lang.String" value="="/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[205, 25]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonEqualsActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="botonflecha">
+    <Component class="javax.swing.JButton" name="buttonDelete">
       <Properties>
         <Property name="text" type="java.lang.String" value="&lt;--"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -311,7 +317,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonflechaActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonDeleteActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

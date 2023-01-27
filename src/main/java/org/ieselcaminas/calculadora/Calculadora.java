@@ -4,6 +4,7 @@
  */
 package org.ieselcaminas.calculadora;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
@@ -26,6 +27,7 @@ public class Calculadora extends javax.swing.JFrame {
         initComponents();
         myInits();
         setLocationRelativeTo(null);
+        
     }
     private void myInits() {
         operation = Operators.NONE;
@@ -70,9 +72,18 @@ public class Calculadora extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calculator");
 
         inputCalc.setEditable(false);
+        inputCalc.setBackground(new java.awt.Color(0, 0, 0));
+        inputCalc.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        inputCalc.setForeground(new java.awt.Color(255, 255, 255));
+        inputCalc.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        inputCalc.setToolTipText("");
 
+        button1.setBackground(new java.awt.Color(0, 0, 0));
+        button1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button1.setForeground(new java.awt.Color(255, 255, 255));
         button1.setText("1");
         button1.setPreferredSize(new java.awt.Dimension(100, 25));
         button1.addActionListener(new java.awt.event.ActionListener() {
@@ -81,6 +92,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        button2.setBackground(new java.awt.Color(0, 0, 0));
+        button2.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button2.setForeground(new java.awt.Color(255, 255, 255));
         button2.setText("2");
         button2.setPreferredSize(new java.awt.Dimension(100, 25));
         button2.addActionListener(new java.awt.event.ActionListener() {
@@ -89,6 +103,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        button3.setBackground(new java.awt.Color(0, 0, 0));
+        button3.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button3.setForeground(new java.awt.Color(255, 255, 255));
         button3.setText("3");
         button3.setPreferredSize(new java.awt.Dimension(100, 25));
         button3.addActionListener(new java.awt.event.ActionListener() {
@@ -97,6 +114,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonAdd.setBackground(new java.awt.Color(0, 0, 0));
+        buttonAdd.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        buttonAdd.setForeground(new java.awt.Color(255, 255, 255));
         buttonAdd.setText("+");
         buttonAdd.setPreferredSize(new java.awt.Dimension(50, 25));
         buttonAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +125,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        button4.setBackground(new java.awt.Color(0, 0, 0));
+        button4.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button4.setForeground(new java.awt.Color(255, 255, 255));
         button4.setText("4");
         button4.setPreferredSize(new java.awt.Dimension(100, 25));
         button4.addActionListener(new java.awt.event.ActionListener() {
@@ -113,6 +136,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        button5.setBackground(new java.awt.Color(0, 0, 0));
+        button5.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button5.setForeground(new java.awt.Color(255, 255, 255));
         button5.setText("5");
         button5.setPreferredSize(new java.awt.Dimension(100, 25));
         button5.addActionListener(new java.awt.event.ActionListener() {
@@ -121,6 +147,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        button6.setBackground(new java.awt.Color(0, 0, 0));
+        button6.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button6.setForeground(new java.awt.Color(255, 255, 255));
         button6.setText("6");
         button6.setPreferredSize(new java.awt.Dimension(100, 25));
         button6.addActionListener(new java.awt.event.ActionListener() {
@@ -129,6 +158,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonSub.setBackground(new java.awt.Color(0, 0, 0));
+        buttonSub.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        buttonSub.setForeground(new java.awt.Color(255, 255, 255));
         buttonSub.setText("-");
         buttonSub.setPreferredSize(new java.awt.Dimension(50, 25));
         buttonSub.addActionListener(new java.awt.event.ActionListener() {
@@ -137,6 +169,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        button7.setBackground(new java.awt.Color(0, 0, 0));
+        button7.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button7.setForeground(new java.awt.Color(255, 255, 255));
         button7.setText("7");
         button7.setPreferredSize(new java.awt.Dimension(100, 25));
         button7.addActionListener(new java.awt.event.ActionListener() {
@@ -145,6 +180,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        button8.setBackground(new java.awt.Color(0, 0, 0));
+        button8.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button8.setForeground(new java.awt.Color(255, 255, 255));
         button8.setText("8");
         button8.setPreferredSize(new java.awt.Dimension(100, 25));
         button8.addActionListener(new java.awt.event.ActionListener() {
@@ -153,6 +191,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        button9.setBackground(new java.awt.Color(0, 0, 0));
+        button9.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button9.setForeground(new java.awt.Color(255, 255, 255));
         button9.setText("9");
         button9.setPreferredSize(new java.awt.Dimension(100, 25));
         button9.addActionListener(new java.awt.event.ActionListener() {
@@ -161,6 +202,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonMult.setBackground(new java.awt.Color(0, 0, 0));
+        buttonMult.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        buttonMult.setForeground(new java.awt.Color(255, 255, 255));
         buttonMult.setText("*");
         buttonMult.setPreferredSize(new java.awt.Dimension(50, 25));
         buttonMult.addActionListener(new java.awt.event.ActionListener() {
@@ -169,6 +213,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonComma.setBackground(new java.awt.Color(0, 0, 0));
+        buttonComma.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        buttonComma.setForeground(new java.awt.Color(255, 255, 255));
         buttonComma.setText(",");
         buttonComma.setPreferredSize(new java.awt.Dimension(100, 25));
         buttonComma.addActionListener(new java.awt.event.ActionListener() {
@@ -177,6 +224,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        button0.setBackground(new java.awt.Color(0, 0, 0));
+        button0.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        button0.setForeground(new java.awt.Color(255, 255, 255));
         button0.setText("0");
         button0.setPreferredSize(new java.awt.Dimension(100, 25));
         button0.addActionListener(new java.awt.event.ActionListener() {
@@ -185,6 +235,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonC.setBackground(new java.awt.Color(0, 0, 0));
+        buttonC.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        buttonC.setForeground(new java.awt.Color(255, 255, 255));
         buttonC.setText("C");
         buttonC.setPreferredSize(new java.awt.Dimension(100, 25));
         buttonC.addActionListener(new java.awt.event.ActionListener() {
@@ -193,6 +246,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonDiv.setBackground(new java.awt.Color(0, 0, 0));
+        buttonDiv.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        buttonDiv.setForeground(new java.awt.Color(255, 255, 255));
         buttonDiv.setText("/");
         buttonDiv.setPreferredSize(new java.awt.Dimension(50, 25));
         buttonDiv.addActionListener(new java.awt.event.ActionListener() {
@@ -201,6 +257,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonEquals.setBackground(new java.awt.Color(0, 0, 0));
+        buttonEquals.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        buttonEquals.setForeground(new java.awt.Color(255, 255, 255));
         buttonEquals.setText("=");
         buttonEquals.setPreferredSize(new java.awt.Dimension(205, 25));
         buttonEquals.addActionListener(new java.awt.event.ActionListener() {
@@ -209,6 +268,9 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        buttonDelete.setBackground(new java.awt.Color(0, 0, 0));
+        buttonDelete.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        buttonDelete.setForeground(new java.awt.Color(255, 255, 255));
         buttonDelete.setText("<--");
         buttonDelete.setPreferredSize(new java.awt.Dimension(100, 25));
         buttonDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -285,7 +347,7 @@ public class Calculadora extends javax.swing.JFrame {
                         .addComponent(buttonEquals, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(5, 5, 5)
                         .addComponent(buttonDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(6, 6, 6))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -322,6 +384,8 @@ public class Calculadora extends javax.swing.JFrame {
                     .addComponent(buttonDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
+
+        getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -421,7 +485,7 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonAddActionPerformed
 
     private void buttonSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSubActionPerformed
-        if (inputCalc.getText().equals("") || cleanDisplay == true ) {
+        if (inputCalc.getText().equals("") && cleanDisplay == true ) {
             addNumberToDisplay("-");
         } else {
             cleanDisplay = true;
@@ -513,6 +577,7 @@ public class Calculadora extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Calculadora().setVisible(true);
+                
             }
         });
     }

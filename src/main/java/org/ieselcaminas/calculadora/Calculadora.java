@@ -15,7 +15,6 @@ public class Calculadora extends javax.swing.JFrame {
     private Operators operation;
     private double accumulator;
     private boolean cleanDisplay;
-    private double temporal;
     private boolean isFirst;
 
     /**
@@ -29,7 +28,6 @@ public class Calculadora extends javax.swing.JFrame {
     private void myInits() {
         operation = Operators.NONE;
         accumulator = 0;
-        temporal = 0;
         cleanDisplay = false;
         isFirst = true;
     }
@@ -64,7 +62,6 @@ public class Calculadora extends javax.swing.JFrame {
         buttonDiv = new javax.swing.JButton();
         buttonEquals = new javax.swing.JButton();
         buttonDelete = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -214,13 +211,6 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("ANS");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -253,21 +243,18 @@ public class Calculadora extends javax.swing.JFrame {
                         .addComponent(button9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonMult, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(buttonEquals, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(buttonDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(buttonComma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(button0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(buttonC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(buttonDiv, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(buttonEquals, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(buttonComma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(button0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonDiv, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -302,8 +289,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonEquals, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(53, 53, 53))
         );
 
@@ -314,23 +300,36 @@ public class Calculadora extends javax.swing.JFrame {
         
         switch(operation) {
             case ADD: 
-                accumulator += Double.parseDouble(inputCalc.getText());
-                inputCalc.setText(String.valueOf(accumulator));
+                accumulator += getDisplayValue();
                 break;
             case SUB: 
-                accumulator -= Double.parseDouble(inputCalc.getText());
-                inputCalc.setText(String.valueOf(accumulator));
+                accumulator -= getDisplayValue();
                 break;
             case MULT:
-                accumulator *= Double.parseDouble(inputCalc.getText());
-                inputCalc.setText(String.valueOf(accumulator));
+                accumulator *= getDisplayValue();
                 break;
             case DIV:
-                accumulator /= Double.parseDouble(inputCalc.getText());
-                inputCalc.setText(String.valueOf(accumulator)); 
+                accumulator /= getDisplayValue();
                 break;
+            default:
+                accumulator = getDisplayValue();
+              
       
         }
+        showOnDisplay(accumulator);
+        
+    }
+    private double getDisplayValue() {
+        String valStr = inputCalc.getText();
+        return Double.parseDouble(valStr);
+    }
+    
+    private void showOnDisplay (double value) {
+        String numStr = "" + value;
+        numStr = numStr.replaceAll("\\.0", "");
+        inputCalc.setText(numStr);
+        cleanDisplay = true;
+        
     }
     private void addNumberToDisplay(String numberStr) {
         if (cleanDisplay){
@@ -361,7 +360,7 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_button4ActionPerformed
 
     private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
-        // TODO add your handling code here:
+
         addNumberToDisplay("5");
     }//GEN-LAST:event_button5ActionPerformed
 
@@ -382,58 +381,36 @@ public class Calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_button9ActionPerformed
 
     private void buttonAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonAddActionPerformed
+
         cleanDisplay = true;
         doCalc();
-        isFirst = true;
-        if (isFirst) {
-            isFirst = false;
-        } else {
-            inputCalc.setText(accumulator + "");
-        }
-        accumulator = Double.parseDouble(inputCalc.getText());
         operation = Operators.ADD; 
+        
 
         
     }//GEN-LAST:event_buttonAddActionPerformed
 
     private void buttonSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSubActionPerformed
-        if (isFirst) {
-            inputCalc.setText("-");
-            isFirst = false;
+        if (inputCalc.getText().equals("") || cleanDisplay == true ) {
+            addNumberToDisplay("-");
         } else {
             cleanDisplay = true;
-            doCalc();
-            inputCalc.setText(accumulator + "");
-            accumulator = Double.parseDouble(inputCalc.getText());
-            operation = Operators.SUB; 
+        doCalc();
+        operation = Operators.SUB; 
         }
-         
     }//GEN-LAST:event_buttonSubActionPerformed
 
     private void buttonMultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMultActionPerformed
         cleanDisplay = true;
         doCalc();
-        isFirst = true;
-        if (isFirst) {
-            isFirst = false;
-        } else {
-            inputCalc.setText(accumulator + "");
-        }
-        accumulator = Double.parseDouble(inputCalc.getText());
-        operation = Operators.MULT; 
+        operation = Operators.MULT;
+        
     }//GEN-LAST:event_buttonMultActionPerformed
 
     private void buttonDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDivActionPerformed
         cleanDisplay = true;
         doCalc();
-        isFirst = true;
-        if (isFirst) {
-            isFirst = false;
-        } else {
-            inputCalc.setText(accumulator + "");
-        }
-        accumulator = Double.parseDouble(inputCalc.getText());
-        operation = Operators.DIV; 
+        operation = Operators.DIV;
     }//GEN-LAST:event_buttonDivActionPerformed
 
     private void buttonCommaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCommaActionPerformed
@@ -462,20 +439,10 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void buttonEqualsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEqualsActionPerformed
         doCalc();
-        inputCalc.setText(accumulator + "");
-        cleanDisplay = true;
         operation = Operators.NONE;
-        while ((inputCalc.getText().contains(",")) && (inputCalc.getText().charAt(inputCalc.getText().length()-1).equals('0'))) {
-           
-            inputCalc.getText().substring(0, inputCalc.getText().length() - 1);
-        }
-        
-    }//GEN-LAST:event_buttonEqualsActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         cleanDisplay = true;
-        addNumberToDisplay(accumulator + "");
-    }//GEN-LAST:event_jButton1ActionPerformed
+
+    }//GEN-LAST:event_buttonEqualsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -532,6 +499,5 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton buttonMult;
     private javax.swing.JButton buttonSub;
     private javax.swing.JTextField inputCalc;
-    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
